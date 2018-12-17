@@ -7,6 +7,6 @@ class Captain < ActiveRecord::Base
   end
 
   def self.sailors
-    where(boat: :sailboat)
+    where(boats: :sailboat)
   end
 end
