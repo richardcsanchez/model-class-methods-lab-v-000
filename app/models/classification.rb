@@ -3,6 +3,6 @@ class Classification < ActiveRecord::Base
   has_many :boats, through: :boat_classifications
 
   def self.my_all
-    all
+    all.uniq
   end
 end
